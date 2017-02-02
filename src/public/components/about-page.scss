@@ -1,0 +1,10 @@
+@import '../config';
+
+.about-page {
+	font-family: $font-stack;
+	font-size: 15px;
+	p, h1 {
+		font-family: $font-stack;
+		color: $base-color-dack;
+	}
+}

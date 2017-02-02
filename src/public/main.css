@@ -1,0 +1,155 @@
+#root .about-page {
+  font-family: Helvetica, sans-serif;
+  font-size: 15px; }
+  #root .about-page p, #root .about-page h1 {
+    font-family: Helvetica, sans-serif;
+    color: #4d4d4d; }
+#root .create-button {
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 25px;
+  background-color: #5cbf2a; }
+  #root .create-button:hover {
+    background-color: #A4E881;
+    color: inherit; }
+  #root .create-button:active {
+    position: relative;
+    top: 1px; }
+  #root .create-button:focus {
+    outline: 0; }
+#root .tasks-grid, #root h3 {
+  color: #4d4d4d;
+  font-family: Helvetica, sans-serif;
+  margin: 15px 25px; }
+  #root .tasks-grid .tasks, #root h3 .tasks {
+    margin: 15px 0;
+    border: 1px solid #d4d4d4;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0px #d4d4d4;
+    transition: all 0.5s; }
+    #root .tasks-grid .tasks.successfully, #root h3 .tasks.successfully {
+      background: #C5FF6C;
+      transition: all 0.5s; }
+    #root .tasks-grid .tasks:hover, #root h3 .tasks:hover {
+      box-shadow: 2px 2px 10px #d4d4d4; }
+    #root .tasks-grid .tasks .title, #root h3 .tasks .title {
+      font-size: 17px;
+      padding-top: 10px;
+      max-width: 1000px;
+      overflow: hidden;
+      min-width: 500px;
+      text-overflow: ellipsis; }
+    #root .tasks-grid .tasks .description, #root h3 .tasks .description {
+      font-size: 14px;
+      padding-top: 10px;
+      padding-bottom: 12px;
+      max-width: 1000px;
+      overflow: hidden;
+      min-width: 500px;
+      text-overflow: ellipsis; }
+    #root .tasks-grid .tasks .time, #root h3 .tasks .time {
+      font-size: 10px;
+      padding-top: 15px; }
+  #root .tasks-grid .group-button, #root h3 .group-button {
+    float: right;
+    position: relative;
+    bottom: 2px; }
+    #root .tasks-grid .group-button .edit-button, #root .tasks-grid .group-button .completed-button, #root .tasks-grid .group-button .delete-button, #root h3 .group-button .edit-button, #root h3 .group-button .completed-button, #root h3 .group-button .delete-button {
+      position: relative;
+      text-align: left;
+      font-weight: bold;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: #4d4d4d;
+      font-size: 10px;
+      padding: 7px 7px;
+      text-transform: uppercase;
+      text-decoration: none; }
+      #root .tasks-grid .group-button .edit-button:hover, #root .tasks-grid .group-button .completed-button:hover, #root .tasks-grid .group-button .delete-button:hover, #root h3 .group-button .edit-button:hover, #root h3 .group-button .completed-button:hover, #root h3 .group-button .delete-button:hover {
+        color: #5cbf2a; }
+      #root .tasks-grid .group-button .edit-button:active, #root .tasks-grid .group-button .completed-button:active, #root .tasks-grid .group-button .delete-button:active, #root h3 .group-button .edit-button:active, #root h3 .group-button .completed-button:active, #root h3 .group-button .delete-button:active {
+        position: relative;
+        top: 1px; }
+      #root .tasks-grid .group-button .edit-button:focus, #root .tasks-grid .group-button .completed-button:focus, #root .tasks-grid .group-button .delete-button:focus, #root h3 .group-button .edit-button:focus, #root h3 .group-button .completed-button:focus, #root h3 .group-button .delete-button:focus {
+        outline: 0; }
+
+.task-edit .content {
+  font-size: 15px;
+  color: #4d4d4d;
+  font-family: Helvetica, sans-serif; }
+.task-edit .edit {
+  color: #4d4d4d;
+  font-family: Helvetica, sans-serif;
+  padding: 15px 0 0 0;
+  text-align: right; }
+  .task-edit .edit .description-task, .task-edit .edit .title-task {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    border: 1px solid #d4d4d4; }
+    .task-edit .edit .description-task:hover, .task-edit .edit .title-task:hover {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12); }
+    .task-edit .edit .description-task textarea, .task-edit .edit .title-task textarea {
+      width: 100%;
+      resize: none;
+      margin: 5px;
+      font-size: 14px;
+      border: none;
+      font-weight: 300; }
+  .task-edit .edit .save-button {
+    margin-top: 10px;
+    margin-right: 130px;
+    width: 100px;
+    background-color: #44c767;
+    border-radius: 28px;
+    border: 1px solid #18ab29;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 8px 8px;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .task-edit .edit .save-button:hover {
+      background-color: #5cbf2a; }
+    .task-edit .edit .save-button:active {
+      position: relative;
+      top: 1px; }
+    .task-edit .edit .save-button:focus {
+      outline: 0; }
+.task-edit .cancel-button {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 100px;
+  background-color: #44c767;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 8px 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  float: right;
+  margin-bottom: -30px;
+  position: relative;
+  bottom: 39px; }
+  .task-edit .cancel-button:hover {
+    background-color: #5cbf2a; }
+  .task-edit .cancel-button:active {
+    position: relative; }
+  .task-edit .cancel-button:focus {
+    outline: 0; }
+
+/*# sourceMappingURL=main.css.map */

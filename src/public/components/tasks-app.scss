@@ -1,0 +1,96 @@
+@import '../config';
+.create-button{
+  position: relative;
+  text-align: left;
+  cursor:pointer;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 25px;
+  background-color:#5cbf2a;
+  &:hover {
+    background-color:#A4E881;
+    color: inherit;
+  }
+  &:active {
+    position:relative;
+    top:1px;
+  }
+  &:focus{
+    outline: 0;
+  }
+}
+.tasks-grid ,h3 {
+  color: $base-color-dack;
+  font-family: $font-stack;
+  margin: 15px 25px;
+  .tasks{
+    margin: 15px 0;
+    border: 1px solid $base-color;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0px $base-color;
+    transition: all 0.5s ;
+    &.successfully {
+      background: #C5FF6C;
+      transition: all 0.5s ;
+    }
+    &:hover {
+      box-shadow: 2px 2px 10px $base-color;
+    }
+    .title {
+      font-size: 17px;
+      padding-top: 10px;
+      max-width: 1000px;
+      overflow: hidden;
+      min-width: 500px;
+      text-overflow: ellipsis;
+    }
+
+    .description {
+      font-size: 14px;
+      padding-top: 10px;
+      padding-bottom: 12px;
+      max-width: 1000px;
+      overflow: hidden;
+      min-width: 500px;
+      text-overflow: ellipsis;
+    }
+    .time{
+      font-size: 10px;
+      padding-top: 15px;
+    }
+  }
+  .group-button{
+    float: right;
+    position: relative;
+    bottom: 2px;
+    .edit-button,.completed-button,.delete-button,{
+      position: relative;
+      text-align: left;
+      font-weight: bold;
+      background-color: transparent;
+      border: none;
+      cursor:pointer;
+      color: $base-color-dack;
+      font-size: 10px;
+      padding:7px 7px;
+      text-transform: uppercase;
+      text-decoration:none;
+      &:hover {
+        color:#5cbf2a;
+      }
+      &:active {
+        position:relative;
+        top:1px;
+      }
+      &:focus{
+        outline: 0;
+      }
+    }
+  }
+}
